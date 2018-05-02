@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace MasterPage
 {
-	public partial class MainPage : MasterDetailPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Detalle : ContentPage
 	{
-		public MainPage()
+		public Detalle ()
 		{
-			InitializeComponent();
+			InitializeComponent ();
 		}
 	}
 }
